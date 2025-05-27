@@ -1,0 +1,1855 @@
+@font-face {
+  font-family: 'ip';
+  src: url(../fonts/ip/font/ip.eot);
+  src: url(../fonts/ip/font/ip.eot#iefix) format("embedded-opentype"),
+    url(../fonts/ip/font/ip.woff) format("woff"),
+    url(../fonts/ip/font/ip.ttf) format("truetype"),
+    url(../fonts/ip/font/ip.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  /* This will ensure text is visible while the font loads */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Za tablete */
+@media (max-width: 768px) {
+  .home-section__overlay .container .home-section__header h1 {
+    font-size: 5rem; /* 80px */
+  }
+}
+
+/* Za mobilne uređaje */
+@media (max-width: 480px) {
+  .home-section__overlay .container .home-section__header h1 {
+    font-size: 3.5rem; /* 56px */
+  }
+}
+
+/* Medijski upit za iPhone 14 Pro Max (430pt) */
+@media (max-width: 430px) {
+  .about--header {
+    padding: 15px 30px;
+    text-align: center;
+  }
+  .home-section__overlay .container .home-section__header h1 {
+    font-size: 3rem; /* 48px */
+  }
+}
+
+/* Ekrani do 1200px */
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+/* Ekrani do 960px */
+@media screen and (max-width: 960px) {
+  .first-nav__links li {
+    margin: 0 7px;
+  }
+
+  .second-nav__logo {
+    display: none;
+  }
+
+  .menu {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .menu ul {
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px dashed #aaa;
+  }
+
+  .menu li a {
+    font-size: 18px;
+    border-bottom: none;
+  }
+
+  .advantages h2:before,
+  .advantages h2:after {
+    width: 25%;
+  }
+
+  .advantages blockquote p {
+    font-size: 20px;
+  }
+
+  .advantages blockquote cite {
+    font-size: 25px;
+  }
+
+  .testimonials__item blockquote cite {
+    font-size: 18px;
+  }
+
+ }
+
+/* Ekrani do 800px */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .home-section__header-label {
+    font-size: 30px;
+  }
+
+  .advantages {
+    margin-top: 30px;
+  }
+
+  .projects__item figcaption a {
+    font-size: 20px;
+  }
+
+  .projects__item figcaption a:before {
+    font-size: 18px;
+  }
+
+  .testimonials__item {
+    margin-bottom: 20px;
+  }
+
+  .contacts-section {
+    padding-top: 150px;
+  }
+
+  .contact-info__logo {
+    display: none;
+  }
+
+  .contact-info__group {
+    padding-left: 0;
+  }
+}
+
+/* Ekrani do 600px */
+@media screen and (max-width: 600px) {
+  .first-nav__links {
+    float: left;
+    width: calc(91.66667% - 40px);
+    margin: 0 calc(20px);
+    height: auto;
+  }
+
+  .first-nav__navcontrol {
+    float: left;
+    width: calc(8.33333% - 40px);
+    margin: 0 calc(20px);
+    height: auto;
+    font-size: 0;
+  }
+
+  .first-nav__navcontrol:before {
+    margin-right: 0;
+  }
+
+  .advantages h2:before,
+  .advantages h2:after {
+    width: 15%;
+  }
+
+  .advantages blockquote {
+    padding: 20px 0;
+  }
+
+  .advantages blockquote p {
+    font-size: 18px;
+  }
+
+  .advantages blockquote cite {
+    font-size: 20px;
+  }
+
+  .main-footer__copyright {
+    padding-top: 20px;
+    line-height: 1;
+  }
+
+  .main-footer__links {
+    padding-top: 0;
+  }
+
+  .main-footer__copyright,
+  .main-footer__links {
+    float: none;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem; /* 56px */
+  }
+}
+
+/* Ekrani do 480px */
+@media screen and (max-width: 480px) {
+
+  .advantages h2:before,
+  .advantages h2:after {
+    width: 10%;
+  }
+
+  .projects__item {
+    float: left;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding-bottom: 75%;
+  }
+
+  .testimonials__item img {
+    display: none;
+  }
+
+  .testimonials__item blockquote {
+    margin-left: 0;
+  }
+
+}
+
+/* Gallery media queries */
+
+/* Za ekrane do 992px */
+@media (max-width: 992px) {
+  .gallery-section {
+    width: 80% !important;
+  }
+
+  .gallery-container {
+    width: 95% !important;
+    height: auto !important;
+    min-height: 300px !important;
+  }
+}
+
+/* Za male ekrane do 480px */
+@media (max-width: 480px) {
+  .gallery-section {
+    width: 100% !important;
+    padding: 0 10px !important;
+  }
+
+  .gallery-container {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 300px !important;
+  }
+}
+
+
+.home-section__overlay .container .home-section__header h1 {
+  font-size: 6 rem;
+  /* osnovna veličina za desktop */
+  text-align: center;
+  /* centriranje teksta */
+  margin: 0 auto;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px) scale(0.85) rotateX(10deg);
+  filter: blur(4px);
+
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotateX(0deg);
+  filter: blur(0);
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+input,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+
+/*
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+blockquote,q{
+        quotes:none}
+
+                
+blockquote cite{
+        font-style:normal}
+        
+blockquote:before,blockquote:after,q:before,q:after{
+        content:'';
+        content:none}
+
+        
+table{
+        border-collapse:collapse;
+        border-spacing:0}
+.first-nav__navcontrol.open {
+  transform: translateX(-50%) rotate(45deg);} 
+
+   html,body{
+        width:100%;
+        height:100%;
+        color:#2c3e50;
+        font-family:"Open Sans",Tahoma,Verdana,Arial,sans-serif;line-height:1.2}
+
+          .about--header {
+  background-color: rgba(68, 108, 179, 0.8);
+  color: white;
+  padding: 20px 50px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+    .icon:before{
+        font-family:"ip";
+        font-style:normal;
+        font-weight:400}
+    .icon_improve:before{
+        content:"\e80f"}
+    .icon_recover:before{
+        content:"\e80a"}
+     
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+nav ol,
+nav ul {
+  list-style: none
+}
+
+
+button,
+input[type=submit] {
+  cursor: pointer
+}
+
+.bg-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-slide.active {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto
+}
+
+.container:before,
+.container:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0
+}
+
+.common-section {
+  padding-top: 100px;
+  width: 100%;
+  margin: 0 0;
+  clear: both
+}
+
+.common-section:before,
+.common-section:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0
+}
+
+.common-section__header {
+  padding-bottom: 50px;
+  text-align: center;
+  float: left;
+  width: 98%;
+  width: calc(100% - 40px);
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-left: calc(20px);
+  margin-right: calc(20px);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+.slider {
+  min-height: 200px; /* ili visina slike */
+}
+
+/*nejra dodano*/
+
+.card1 {
+  width: 100%;
+  max-width: 600px; /* povećano sa 400px */
+  margin: 0 auto;
+  border: 2px solid #004080;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 20px; /* povećano sa 12px */
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card1:hover {
+  transform: scale(1.03);
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.slider-image.active {
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+/***/
+.grid-container {
+  width: 100%;
+  margin: 0 0;
+  clear: both
+}
+
+.grid-container:before,
+.grid-container:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0
+}
+
+::selection {
+  color: #fff;
+  background-color: #111
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Georgia, Times, "Times New Roman", serif
+}
+
+h2 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 40px
+}
+
+h3 {
+  font-size: 30px
+}
+
+h4 {
+  font-size: 20px
+}
+
+p {
+  font-size: 18px
+}
+
+li p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic
+}
+
+a {
+  color: #2c3e50;
+  font-family: "Open Sans", Tahoma, Verdana, Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  outline-style: none;
+  border-bottom: 1px dashed #2c3e50
+}
+
+a:hover {
+  border-color: transparent
+}
+
+.main-header {
+  position: fixed;
+  z-index: 100;
+  width: 100%
+}
+
+.first-nav {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  height: 40px;
+  overflow: hidden;
+  background-color: #446cb3;
+  width: 100%;
+  margin: 0 0;
+  clear: both
+}
+
+.first-nav:before,
+.first-nav:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0
+}
+
+.first-nav__links {
+  float: left;
+  width: 73%;
+  width: calc(75% - 40px);
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-left: calc(20px);
+  margin-right: calc(20px);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+.first-nav__links li {
+  display: inline-block;
+  margin: 0 10px
+}
+
+.first-nav__links a {
+  color: #fff;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  line-height: 40px;
+  border-color: #fff;
+  -webkit-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s
+}
+
+.first-nav__links a.is-selected,
+.first-nav__links a:hover {
+  color: #111;
+  border: 0
+}
+
+.first-nav__navcontrol {
+  display: none;
+  float: center;
+  width: 23%;
+  width: calc(55% - 200px);
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-left: calc(10px);
+  margin-right: calc(20px);
+  font-size: 24px;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 40px;
+  text-align: right;
+  border: 0;
+  position: absolute;
+  -webkit-transition: color .5s;
+  -o-transition: color .5s;
+  transition: transform 0.3s ease color .5s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.first-nav__navcontrol:before {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s
+}
+
+.first-nav__navcontrol.is-open,
+.first-nav__navcontrol.is-closed {
+  display: block
+}
+
+.first-nav__navcontrol:hover,
+.first-nav__navcontrol:hover:before {
+  color: #111
+}
+
+.second-nav {
+  display: flex;
+  justify-content: center;
+  min-height: 80px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 0;
+  clear: both;
+  margin-top: 40px;
+  -webkit-box-shadow: inset 0 1px 2px -1px #111, 0 1px 2px -1px #111;
+  box-shadow: inset 0 1px 2px -1px #111, 0 1px 2px -1px #111;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s
+}
+
+.second-nav:before,
+.second-nav:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0
+}
+
+.second-nav.is-closed {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%)
+}
+
+.second-nav__logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 80px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 80px;
+  font-family: "Open Sans", Tahoma, Verdana, Arial, sans-serif;
+  letter-spacing: -5px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #446cb3;
+  border: 0;
+  -webkit-box-shadow: inset 0 1px 2px -1px #111;
+  box-shadow: inset 0 1px 2px -1px #111
+}
+
+.second-nav__logo:after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  z-index: 250;
+  border-top: 30px solid #446cb3;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent
+}
+
+.second-nav__logo span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%
+}
+
+.second-nav__logo span:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: -2px;
+  width: 50px;
+  height: 5px;
+  background-color: transparent;
+  -webkit-box-shadow: 0 1px 2px -1px #111;
+  box-shadow: 0 1px 2px -1px #111;
+  -webkit-transform: rotate(-37deg);
+  -ms-transform: rotate(-37deg);
+  transform: rotate(-37deg)
+}
+
+.second-nav__logo span:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -2px;
+  width: 50px;
+  height: 5px;
+  background-color: transparent;
+  -webkit-box-shadow: 0 1px 2px -1px #111;
+  box-shadow: 0 1px 2px -1px #111;
+  -webkit-transform: rotate(37deg);
+  -ms-transform: rotate(37deg);
+  transform: rotate(37deg)
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  /* Gura meni ul desno */
+  align-items: center;
+  float: left;
+  width: 98%;
+  width: calc(100% - 40px);
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-left: calc(20px);
+  margin-right: calc(20px);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+  padding-left: 100px
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu ul {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 18px
+}
+
+.menu li a {
+  line-height: 40px;
+  font-size: 20px;
+  -webkit-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s
+}
+
+.menu li a.is-selected,
+.menu li a:hover {
+  color: #aaa;
+  border: 0
+}
+
+#google_translate_element {
+  display: inline-block;
+  color: #aaa;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.home-about-section {
+  position: relative;
+  padding-bottom: 60px;
+  height: auto;
+  overflow: hidden;
+  margin-top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  overflow-y: auto;
+  padding: 10px 5px;
+  /* malo paddinga */
+}
+
+
+.home-section:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 0;
+  clear: both;
+  -webkit-box-shadow: 0 0 2px 1px #111;
+  box-shadow: 0 0 2px 1px #111
+}
+
+
+.home-section__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  background-color: #000;
+  /* default color in case image isn't loaded */
+}
+
+.home-section__overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.home-section__header h3 {
+  margin: 0;
+  padding: 0.5em;
+}
+
+
+.home-section__header {
+  padding: 200px 10px 400px;
+  text-align: center;
+  font-family: Calibri
+    /*Tahoma,Verdana,Arial*/
+  ;
+}
+
+.home-section__header h1 {
+  margin-bottom: 10px;
+  font-size: 100px;
+  font-family: "Open Sans", Tahoma, Verdana, Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 1px #111
+}
+
+.home-section__header h2 {
+  color: #fff
+}
+
+.home-section__header-label {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  color: #fff
+}
+
+
+.background-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.about-header {
+  background-color: rgba(68, 108, 179, 0.8);
+  /* Polutransparentna pozadina */
+  color: white;
+  padding: 20px 50px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.about-section__card {
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 4px -2px #111;
+  box-shadow: 2px 2px 4px -2px #111;
+  max-width: 1200px;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  height: auto;
+  background-color: rgba(68, 108, 179, 0.8);
+  /* Polutransparentna pozadina */
+  position: relative;
+  z-index: 2;
+  position: relative;
+  top: -280px;
+}
+
+
+.about-section__card-info {
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  box-sizing: border-box;
+  /* Omogućava bolju kontrolu nad paddingom i marginama */
+}
+
+
+.about-section__card-info p {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-section__card-info blockquote p {
+  margin: 20px 0 20px 20px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.about-section__card-info .about-section__card-info-status {
+  margin-top: 20px;
+  padding-top: 10px;
+  font-weight: 400;
+  border-top: 1px dashed #aaa;
+}
+
+.about-section__card-info .about-section__card-info-status span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 10px solid #446cb3;
+  border-right: 10px solid #446cb3;
+  border-bottom: 10px solid #446cb3;
+  float: left;
+  width: 98%;
+  width: calc(100% - 40px);
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-left: calc(20px);
+  margin-right: calc(20px);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-top: 50px
+}
+
+.advantages h2 {
+  position: relative;
+  margin-top: -15px
+}
+
+.advantages h2:before,
+.advantages h2:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  display: block;
+  width: 30%;
+  height: 10px;
+  background-color: #446cb3
+}
+
+.advantages h2:before {
+  left: 0
+}
+
+.advantages h2:after {
+  right: 0
+}
+
+.advantages blockquote {
+  padding: 40px 0;
+  border-bottom: 10px solid #446cb3
+}
+
+.advantages blockquote p,
+.advantages blockquote cite {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto
+}
+
+.advantages blockquote p {
+  margin-bottom: 20px;
+  font-weight: lighter;
+  font-size: 25px
+}
+
+.advantages blockquote cite {
+  font-size: 30px
+}
+
+.gallery-section {
+  width: 63%;
+  position: relative;
+  margin: 0 auto;
+  /* centriranje na sredinu */
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.gallery-container {
+  width: 90%;
+  max-width: 1000px;
+  height: 600px;
+  /* Prilagodi po potrebi */
+  overflow: hidden;
+  padding-bottom: 10px;
+
+  margin: 0 auto;
+  /* Centriranje kontejnera */
+  position: relative;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  /* Opcionalno: svijetla pozadina za kontrast */
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  /* 3 slike po 100%  Ako imaš 3 slike → 3 × 100% = 300%. Ako ih imaš 4 → stavi 400%.*/
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 100%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.projects-wrap {
+  position: relative;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+
+.projects-wrap:before,
+.projects-wrap:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+
+.projects-wrap:before {
+  top: 0;
+  box-shadow: 0 0 2px 1px #111;
+}
+
+.projects-wrap:after {
+  bottom: 0;
+  box-shadow: 0 0 2px 1px #111;
+}
+
+.projects {
+  float: left;
+  width: 100%;
+  margin: 0;
+  height: auto;
+}
+
+.projects__item {
+  float: left;
+  width: 25%;
+  margin: 0;
+  position: relative;
+  height: 0;
+  padding-bottom: 18.75%;
+  overflow: hidden;
+}
+
+.projects__item img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.projects__item figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.projects__item figcaption:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.projects__item figcaption a {
+  display: inline-block;
+  width: 90%;
+  font-size: 25px;
+  color: #446cb3;
+  vertical-align: middle;
+  white-space: normal;
+  border-bottom: none;
+}
+
+.projects__item figcaption a:before {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.projects__item:hover figcaption {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contacts-section {
+  position: relative;
+  padding-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Kontakt kartica */
+.contact-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px -2px #111;
+  text-align: center;
+}
+
+.contact-card__header {
+  padding: 20px;
+  background-color: #446cb3;
+}
+
+.contact-card__header h2,
+.contact-card__header h4 {
+  color: #fff;
+}
+
+/* Kontakt informacije */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background-color: #fff;
+  white-space: normal;
+}
+
+.contact-info__logo {
+  display: inline-block;
+  font-size: 80px;
+  line-height: 60px;
+  letter-spacing: -5px;
+  font-weight: 700;
+  color: #446cb3;
+  font-family: "Open Sans", Tahoma, Verdana, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-info__group {
+  display: inline-block;
+  padding-left: 20px;
+  white-space: normal;
+  vertical-align: top;
+  text-align: center;
+}
+
+.contact-info__additional {
+  margin-bottom: 20px;
+}
+
+.contact-info__additional p {
+  font-size: 14px;
+  font-style: italic;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Vcard informacije */
+.contact-info__vcard h4 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contact-info__vcard p {
+  margin-bottom: 10px;
+}
+
+.contact-info__vcard p:before {
+  float: left;
+  width: 25px;
+  height: 25px;
+  vertical-align: top;
+}
+
+.contact-info__vcard a,
+.contact-info__vcard span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Kontakt forma */
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: none;
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #446cb3;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #446cb3;
+  background-color: #eef3fc;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-size: 14px;
+  font-style: italic;
+  color: #aaa;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #446cb3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #365899;
+}
+
+.main-footer {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background-color: #446cb3;
+  color: #fff;
+  -webkit-box-shadow: 0 -2px 2px -1px #111;
+  box-shadow: 0 -2px 2px -1px #111;
+}
+
+.main-footer:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -40px;
+  border-bottom: 40px solid #446cb3;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.main-footer a {
+  color: #fff;
+  border-color: #fff;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.main-footer a:hover {
+  color: #111;
+}
+
+.main-footer__copyright,
+.main-footer__links {
+  font-weight: lighter;
+
+  .container-projekti {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 u redu za male ekrane */
+    gap: 20px;
+    max-width: 1200px;
+    font-weight: 700;
+  }
+
+  margin: 0 auto;
+}
+
+/* Glavni container za partnere */
+.container-partneri {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Grid layout za kartice partnera */
+.grid-partneri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 0;
+   text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:hover {
+  opacity: 0.8;
+}
+
+
+.card h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+/* Tekst unutar kartice */
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  padding: 0 10px;
+}
+
+.common-section2__header {
+  text-align: center;
+  margin: 0 auto 20px auto;
+  font-family: 'ip', "Open Sans", Tahoma, Verdana, Arial, sans-serif;
+  max-width: 100%;
+  box-sizing: border-box;
+
+}
+
+.common-section2__header h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.common-section2__header h3 {
+  font-size: 18px;
+  color: #666;
+}
+
+
+
+
+.services-list {
+  padding-left: 30px;
+  list-style-position: inside;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+}
+
+.services__item {
+  background: #fff;
+  border: 1px solid #003366;
+  border-radius: 8px;
+  padding: 50px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: default;
+  background-color: #f2f4f4;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.services__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.services__item h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #003366;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.services__item p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.services__item.icon_improve::before {
+  content: "⚡";
+  font-size: 28px;
+  margin-bottom: 10px;
+  display: block;
+  color: #003366;
+}
+
+
+@media (max-width: 768px) {
+  .common-section2__header h2 {
+    font-size: 2rem;
+    /* malo manji naslov na tabletima */
+    margin-bottom: 30px;
+  }
+
+  .common-section2__header h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .common-section2__header h2 {
+    font-size: 1.5rem;
+    /* još manji naslov na mobilnim */
+    margin-bottom: 20px;
+  }
+
+  .common-section2__header h3 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .common-section2__header h2 {
+    font-size: 1.8rem;
+    /* između desktop i mobitela */
+    margin-bottom: 35px;
+  }
+
+  .common-section2__header h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .first-nav__links {
+    float: left;
+    width: calc(91.66667% - 40px);
+    margin: 0 calc(20px);
+    height: auto;
+  }
+
+
+  .first-nav__navcontrol {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Animacija za hamburger ikonu */
+    position: absolute;
+    transform: translateX(-50%);
+    /* Centriranje ikone */
+  }
+
+  .first-nav__navcontrol:before {
+    margin-right: 0;
+  }
+
+  .advantages h2:before,
+  .advantages h2:after {
+    width: 15%;
+  }
+
+  .advantages blockquote {
+    padding: 20px 0;
+  }
+
+  .advantages blockquote p {
+    font-size: 18px;
+  }
+
+  .advantages blockquote cite {
+    font-size: 20px;
+  }
+
+  .process__step-icon {
+    width: 140px;
+    height: 140px;
+    margin-left: -70px;
+  }
+
+  .process__step-icon:before {
+    font-size: 70px;
+    line-height: 140px;
+  }
+
+  .process__step-info {
+    top: 140px;
+  }
+
+  .main-footer__copyright {
+    padding-top: 20px;
+    line-height: 1;
+  }
+
+  .main-footer__links {
+    padding-top: 0;
+  }
+
+  .main-footer__copyright,
+  .main-footer__links {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  .advantages h2:before,
+  .advantages h2:after {
+    width: 10%;
+  }
+
+  .process__step-icon {
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+  }
+
+  .process__step-icon:before {
+    font-size: 60px;
+    line-height: 120px;
+  }
+
+  .process__step-info {
+    top: 120px;
+  }
+
+  .projects__item {
+    float: left;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding-bottom: 75%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .services {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    /* jedna kolona */
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    justify-items: center !important;
+    /* centrira sadržaj */
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .services__item {
+    width: 100% !important;
+    max-width: 320px !important;
+    /* manja širina */
+    padding: 15px 20px !important;
+    /* manji padding */
+    box-sizing: border-box !important;
+  }
+
+  .services__item h4,
+  .services__item p {
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+}
